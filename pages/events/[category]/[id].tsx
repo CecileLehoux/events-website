@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import styles from "./single-page.module.css";
 
 const Event = ({ paramsEvent }: any) => {
@@ -10,7 +10,6 @@ const Event = ({ paramsEvent }: any) => {
   const router = useRouter();
 
   const handleChange = (event: any) => {
-    console.log(value);
     setValue(event.target.value);
   };
   const onSubmit = async (e: any) => {
